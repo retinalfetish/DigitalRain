@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DigitalRain">
+        <attr name="rainAlpha" format="float" />
+        <attr name="rainAnimator" format="reference" />
+        <attr name="rainDepth" format="float" />
+        <attr name="rainIntensity" format="integer" />
+        <attr name="rainSpeed" format="integer" />
+
+        <attr name="android:autoStart" />
+        <attr name="android:enabled" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+    </declare-styleable>
+</resources>

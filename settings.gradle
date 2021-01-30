@@ -1,0 +1,3 @@
+include ':digitalrain'
+include ':app'
+rootProject.name = "DigitalRain"
