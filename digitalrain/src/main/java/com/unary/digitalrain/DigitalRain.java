@@ -277,6 +277,16 @@ public class DigitalRain extends View implements TimeAnimator.TimeListener, Runn
     }
 
     @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+
+        // Animator might leak context
+        if (mRainAnimator != null) {
+            mRainAnimator.cancel();
+        }
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
